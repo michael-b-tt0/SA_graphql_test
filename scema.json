@@ -1,0 +1,6454 @@
+{
+  "data": {
+    "__schema": {
+      "types": [
+        {
+          "name": "ActivateNewUserInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "ApplyEditInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "BodyModification",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "location",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "String"
+                }
+              }
+            },
+            {
+              "name": "description",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            }
+          ]
+        },
+        {
+          "name": "BodyModificationCriterionInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "BodyModificationInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "Boolean",
+          "kind": "SCALAR",
+          "fields": []
+        },
+        {
+          "name": "BreastTypeCriterionInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "BreastTypeEnum",
+          "kind": "ENUM",
+          "fields": []
+        },
+        {
+          "name": "CancelEditInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "CommentCommentedEdit",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "comment",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "EditComment"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "CommentOwnEdit",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "comment",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "EditComment"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "CommentVotedEdit",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "comment",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "EditComment"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "CriterionModifier",
+          "kind": "ENUM",
+          "fields": []
+        },
+        {
+          "name": "Date",
+          "kind": "SCALAR",
+          "fields": []
+        },
+        {
+          "name": "DateAccuracyEnum",
+          "kind": "ENUM",
+          "fields": []
+        },
+        {
+          "name": "DateCriterionInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "DateTime",
+          "kind": "SCALAR",
+          "fields": []
+        },
+        {
+          "name": "DownvoteOwnEdit",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "edit",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Edit"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "Draft",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "id",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "ID"
+                }
+              }
+            },
+            {
+              "name": "created",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Time"
+                }
+              }
+            },
+            {
+              "name": "expires",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Time"
+                }
+              }
+            },
+            {
+              "name": "data",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "DraftData"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "DraftData",
+          "kind": "UNION",
+          "fields": []
+        },
+        {
+          "name": "DraftEntity",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "name",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "String"
+                }
+              }
+            },
+            {
+              "name": "id",
+              "args": [],
+              "type": {
+                "name": "ID",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            }
+          ]
+        },
+        {
+          "name": "DraftEntityInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "DraftFingerprint",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "hash",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "String"
+                }
+              }
+            },
+            {
+              "name": "algorithm",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "FingerprintAlgorithm"
+                }
+              }
+            },
+            {
+              "name": "duration",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Int"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "DraftSubmissionStatus",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "id",
+              "args": [],
+              "type": {
+                "name": "ID",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            }
+          ]
+        },
+        {
+          "name": "Edit",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "id",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "ID"
+                }
+              }
+            },
+            {
+              "name": "user",
+              "args": [],
+              "type": {
+                "name": "User",
+                "kind": "OBJECT",
+                "ofType": null
+              }
+            },
+            {
+              "name": "target",
+              "args": [],
+              "type": {
+                "name": "EditTarget",
+                "kind": "UNION",
+                "ofType": null
+              }
+            },
+            {
+              "name": "target_type",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "TargetTypeEnum"
+                }
+              }
+            },
+            {
+              "name": "merge_sources",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "operation",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "OperationEnum"
+                }
+              }
+            },
+            {
+              "name": "bot",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Boolean"
+                }
+              }
+            },
+            {
+              "name": "details",
+              "args": [],
+              "type": {
+                "name": "EditDetails",
+                "kind": "UNION",
+                "ofType": null
+              }
+            },
+            {
+              "name": "old_details",
+              "args": [],
+              "type": {
+                "name": "EditDetails",
+                "kind": "UNION",
+                "ofType": null
+              }
+            },
+            {
+              "name": "options",
+              "args": [],
+              "type": {
+                "name": "PerformerEditOptions",
+                "kind": "OBJECT",
+                "ofType": null
+              }
+            },
+            {
+              "name": "comments",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "votes",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "vote_count",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Int"
+                }
+              }
+            },
+            {
+              "name": "destructive",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Boolean"
+                }
+              }
+            },
+            {
+              "name": "status",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "VoteStatusEnum"
+                }
+              }
+            },
+            {
+              "name": "applied",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Boolean"
+                }
+              }
+            },
+            {
+              "name": "update_count",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Int"
+                }
+              }
+            },
+            {
+              "name": "updatable",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Boolean"
+                }
+              }
+            },
+            {
+              "name": "created",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Time"
+                }
+              }
+            },
+            {
+              "name": "updated",
+              "args": [],
+              "type": {
+                "name": "Time",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "closed",
+              "args": [],
+              "type": {
+                "name": "Time",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "expires",
+              "args": [],
+              "type": {
+                "name": "Time",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            }
+          ]
+        },
+        {
+          "name": "EditComment",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "id",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "ID"
+                }
+              }
+            },
+            {
+              "name": "user",
+              "args": [],
+              "type": {
+                "name": "User",
+                "kind": "OBJECT",
+                "ofType": null
+              }
+            },
+            {
+              "name": "date",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Time"
+                }
+              }
+            },
+            {
+              "name": "comment",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "String"
+                }
+              }
+            },
+            {
+              "name": "edit",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Edit"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "EditCommentInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "EditDetails",
+          "kind": "UNION",
+          "fields": []
+        },
+        {
+          "name": "EditInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "EditQueryInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "EditSortEnum",
+          "kind": "ENUM",
+          "fields": []
+        },
+        {
+          "name": "EditTarget",
+          "kind": "UNION",
+          "fields": []
+        },
+        {
+          "name": "EditVote",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "user",
+              "args": [],
+              "type": {
+                "name": "User",
+                "kind": "OBJECT",
+                "ofType": null
+              }
+            },
+            {
+              "name": "date",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Time"
+                }
+              }
+            },
+            {
+              "name": "vote",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "VoteTypeEnum"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "EditVoteInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "EthnicityEnum",
+          "kind": "ENUM",
+          "fields": []
+        },
+        {
+          "name": "EthnicityFilterEnum",
+          "kind": "ENUM",
+          "fields": []
+        },
+        {
+          "name": "EyeColorCriterionInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "EyeColorEnum",
+          "kind": "ENUM",
+          "fields": []
+        },
+        {
+          "name": "FailedOwnEdit",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "edit",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Edit"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "FavoriteFilter",
+          "kind": "ENUM",
+          "fields": []
+        },
+        {
+          "name": "FavoritePerformerEdit",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "edit",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Edit"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "FavoritePerformerScene",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "scene",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Scene"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "FavoriteStudioEdit",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "edit",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Edit"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "FavoriteStudioScene",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "scene",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Scene"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "Fingerprint",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "hash",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "String"
+                }
+              }
+            },
+            {
+              "name": "algorithm",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "FingerprintAlgorithm"
+                }
+              }
+            },
+            {
+              "name": "duration",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Int"
+                }
+              }
+            },
+            {
+              "name": "submissions",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Int"
+                }
+              }
+            },
+            {
+              "name": "reports",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Int"
+                }
+              }
+            },
+            {
+              "name": "created",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Time"
+                }
+              }
+            },
+            {
+              "name": "updated",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Time"
+                }
+              }
+            },
+            {
+              "name": "user_submitted",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Boolean"
+                }
+              }
+            },
+            {
+              "name": "user_reported",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Boolean"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "FingerprintAlgorithm",
+          "kind": "ENUM",
+          "fields": []
+        },
+        {
+          "name": "FingerprintEditInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "FingerprintInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "FingerprintQueryInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "FingerprintSubmission",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "FingerprintSubmissionType",
+          "kind": "ENUM",
+          "fields": []
+        },
+        {
+          "name": "FingerprintedSceneEdit",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "edit",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Edit"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "Float",
+          "kind": "SCALAR",
+          "fields": []
+        },
+        {
+          "name": "FuzzyDate",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "date",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Date"
+                }
+              }
+            },
+            {
+              "name": "accuracy",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "DateAccuracyEnum"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "GenderEnum",
+          "kind": "ENUM",
+          "fields": []
+        },
+        {
+          "name": "GenderFilterEnum",
+          "kind": "ENUM",
+          "fields": []
+        },
+        {
+          "name": "GenerateInviteCodeInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "GrantInviteInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "HairColorCriterionInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "HairColorEnum",
+          "kind": "ENUM",
+          "fields": []
+        },
+        {
+          "name": "ID",
+          "kind": "SCALAR",
+          "fields": []
+        },
+        {
+          "name": "IDCriterionInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "Image",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "id",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "ID"
+                }
+              }
+            },
+            {
+              "name": "url",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "String"
+                }
+              }
+            },
+            {
+              "name": "width",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Int"
+                }
+              }
+            },
+            {
+              "name": "height",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Int"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "ImageCreateInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "ImageDestroyInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "ImageUpdateInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "Int",
+          "kind": "SCALAR",
+          "fields": []
+        },
+        {
+          "name": "IntCriterionInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "InviteKey",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "id",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "ID"
+                }
+              }
+            },
+            {
+              "name": "uses",
+              "args": [],
+              "type": {
+                "name": "Int",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "expires",
+              "args": [],
+              "type": {
+                "name": "Time",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            }
+          ]
+        },
+        {
+          "name": "MarkNotificationReadInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "Measurements",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "cup_size",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "band_size",
+              "args": [],
+              "type": {
+                "name": "Int",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "waist",
+              "args": [],
+              "type": {
+                "name": "Int",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "hip",
+              "args": [],
+              "type": {
+                "name": "Int",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            }
+          ]
+        },
+        {
+          "name": "MultiIDCriterionInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "MultiStringCriterionInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "Mutation",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "sceneCreate",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": "Scene",
+                "kind": "OBJECT",
+                "ofType": null
+              }
+            },
+            {
+              "name": "sceneUpdate",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": "Scene",
+                "kind": "OBJECT",
+                "ofType": null
+              }
+            },
+            {
+              "name": "sceneDestroy",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Boolean"
+                }
+              }
+            },
+            {
+              "name": "performerCreate",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": "Performer",
+                "kind": "OBJECT",
+                "ofType": null
+              }
+            },
+            {
+              "name": "performerUpdate",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": "Performer",
+                "kind": "OBJECT",
+                "ofType": null
+              }
+            },
+            {
+              "name": "performerDestroy",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Boolean"
+                }
+              }
+            },
+            {
+              "name": "studioCreate",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": "Studio",
+                "kind": "OBJECT",
+                "ofType": null
+              }
+            },
+            {
+              "name": "studioUpdate",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": "Studio",
+                "kind": "OBJECT",
+                "ofType": null
+              }
+            },
+            {
+              "name": "studioDestroy",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Boolean"
+                }
+              }
+            },
+            {
+              "name": "tagCreate",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": "Tag",
+                "kind": "OBJECT",
+                "ofType": null
+              }
+            },
+            {
+              "name": "tagUpdate",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": "Tag",
+                "kind": "OBJECT",
+                "ofType": null
+              }
+            },
+            {
+              "name": "tagDestroy",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Boolean"
+                }
+              }
+            },
+            {
+              "name": "userCreate",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": "User",
+                "kind": "OBJECT",
+                "ofType": null
+              }
+            },
+            {
+              "name": "userUpdate",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": "User",
+                "kind": "OBJECT",
+                "ofType": null
+              }
+            },
+            {
+              "name": "userDestroy",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Boolean"
+                }
+              }
+            },
+            {
+              "name": "imageCreate",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": "Image",
+                "kind": "OBJECT",
+                "ofType": null
+              }
+            },
+            {
+              "name": "imageDestroy",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Boolean"
+                }
+              }
+            },
+            {
+              "name": "newUser",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": "ID",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "activateNewUser",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": "User",
+                "kind": "OBJECT",
+                "ofType": null
+              }
+            },
+            {
+              "name": "generateInviteCodes",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": "GenerateInviteCodeInput"
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "rescindInviteCode",
+              "args": [
+                {
+                  "name": "code",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Boolean"
+                }
+              }
+            },
+            {
+              "name": "grantInvite",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Int"
+                }
+              }
+            },
+            {
+              "name": "revokeInvite",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Int"
+                }
+              }
+            },
+            {
+              "name": "tagCategoryCreate",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": "TagCategory",
+                "kind": "OBJECT",
+                "ofType": null
+              }
+            },
+            {
+              "name": "tagCategoryUpdate",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": "TagCategory",
+                "kind": "OBJECT",
+                "ofType": null
+              }
+            },
+            {
+              "name": "tagCategoryDestroy",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Boolean"
+                }
+              }
+            },
+            {
+              "name": "siteCreate",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": "Site",
+                "kind": "OBJECT",
+                "ofType": null
+              }
+            },
+            {
+              "name": "siteUpdate",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": "Site",
+                "kind": "OBJECT",
+                "ofType": null
+              }
+            },
+            {
+              "name": "siteDestroy",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Boolean"
+                }
+              }
+            },
+            {
+              "name": "regenerateAPIKey",
+              "args": [
+                {
+                  "name": "userID",
+                  "type": {
+                    "name": "ID"
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "String"
+                }
+              }
+            },
+            {
+              "name": "resetPassword",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Boolean"
+                }
+              }
+            },
+            {
+              "name": "changePassword",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Boolean"
+                }
+              }
+            },
+            {
+              "name": "requestChangeEmail",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "UserChangeEmailStatus"
+                }
+              }
+            },
+            {
+              "name": "validateChangeEmail",
+              "args": [
+                {
+                  "name": "token",
+                  "type": {
+                    "name": null
+                  }
+                },
+                {
+                  "name": "email",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "UserChangeEmailStatus"
+                }
+              }
+            },
+            {
+              "name": "confirmChangeEmail",
+              "args": [
+                {
+                  "name": "token",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "UserChangeEmailStatus"
+                }
+              }
+            },
+            {
+              "name": "sceneEdit",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Edit"
+                }
+              }
+            },
+            {
+              "name": "performerEdit",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Edit"
+                }
+              }
+            },
+            {
+              "name": "studioEdit",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Edit"
+                }
+              }
+            },
+            {
+              "name": "tagEdit",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Edit"
+                }
+              }
+            },
+            {
+              "name": "sceneEditUpdate",
+              "args": [
+                {
+                  "name": "id",
+                  "type": {
+                    "name": null
+                  }
+                },
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Edit"
+                }
+              }
+            },
+            {
+              "name": "performerEditUpdate",
+              "args": [
+                {
+                  "name": "id",
+                  "type": {
+                    "name": null
+                  }
+                },
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Edit"
+                }
+              }
+            },
+            {
+              "name": "studioEditUpdate",
+              "args": [
+                {
+                  "name": "id",
+                  "type": {
+                    "name": null
+                  }
+                },
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Edit"
+                }
+              }
+            },
+            {
+              "name": "tagEditUpdate",
+              "args": [
+                {
+                  "name": "id",
+                  "type": {
+                    "name": null
+                  }
+                },
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Edit"
+                }
+              }
+            },
+            {
+              "name": "editVote",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Edit"
+                }
+              }
+            },
+            {
+              "name": "editComment",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Edit"
+                }
+              }
+            },
+            {
+              "name": "applyEdit",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Edit"
+                }
+              }
+            },
+            {
+              "name": "cancelEdit",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Edit"
+                }
+              }
+            },
+            {
+              "name": "submitFingerprint",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Boolean"
+                }
+              }
+            },
+            {
+              "name": "submitSceneDraft",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "DraftSubmissionStatus"
+                }
+              }
+            },
+            {
+              "name": "submitPerformerDraft",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "DraftSubmissionStatus"
+                }
+              }
+            },
+            {
+              "name": "destroyDraft",
+              "args": [
+                {
+                  "name": "id",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Boolean"
+                }
+              }
+            },
+            {
+              "name": "favoritePerformer",
+              "args": [
+                {
+                  "name": "id",
+                  "type": {
+                    "name": null
+                  }
+                },
+                {
+                  "name": "favorite",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Boolean"
+                }
+              }
+            },
+            {
+              "name": "favoriteStudio",
+              "args": [
+                {
+                  "name": "id",
+                  "type": {
+                    "name": null
+                  }
+                },
+                {
+                  "name": "favorite",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Boolean"
+                }
+              }
+            },
+            {
+              "name": "markNotificationsRead",
+              "args": [
+                {
+                  "name": "notification",
+                  "type": {
+                    "name": "MarkNotificationReadInput"
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Boolean"
+                }
+              }
+            },
+            {
+              "name": "updateNotificationSubscriptions",
+              "args": [
+                {
+                  "name": "subscriptions",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Boolean"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "NewUserInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "Notification",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "created",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Time"
+                }
+              }
+            },
+            {
+              "name": "read",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Boolean"
+                }
+              }
+            },
+            {
+              "name": "data",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "NotificationData"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "NotificationData",
+          "kind": "UNION",
+          "fields": []
+        },
+        {
+          "name": "NotificationEnum",
+          "kind": "ENUM",
+          "fields": []
+        },
+        {
+          "name": "OperationEnum",
+          "kind": "ENUM",
+          "fields": []
+        },
+        {
+          "name": "Performer",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "id",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "ID"
+                }
+              }
+            },
+            {
+              "name": "name",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "String"
+                }
+              }
+            },
+            {
+              "name": "disambiguation",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "aliases",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "gender",
+              "args": [],
+              "type": {
+                "name": "GenderEnum",
+                "kind": "ENUM",
+                "ofType": null
+              }
+            },
+            {
+              "name": "urls",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "birth_date",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "death_date",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "age",
+              "args": [],
+              "type": {
+                "name": "Int",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "ethnicity",
+              "args": [],
+              "type": {
+                "name": "EthnicityEnum",
+                "kind": "ENUM",
+                "ofType": null
+              }
+            },
+            {
+              "name": "country",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "eye_color",
+              "args": [],
+              "type": {
+                "name": "EyeColorEnum",
+                "kind": "ENUM",
+                "ofType": null
+              }
+            },
+            {
+              "name": "hair_color",
+              "args": [],
+              "type": {
+                "name": "HairColorEnum",
+                "kind": "ENUM",
+                "ofType": null
+              }
+            },
+            {
+              "name": "height",
+              "args": [],
+              "type": {
+                "name": "Int",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "cup_size",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "band_size",
+              "args": [],
+              "type": {
+                "name": "Int",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "waist_size",
+              "args": [],
+              "type": {
+                "name": "Int",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "hip_size",
+              "args": [],
+              "type": {
+                "name": "Int",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "breast_type",
+              "args": [],
+              "type": {
+                "name": "BreastTypeEnum",
+                "kind": "ENUM",
+                "ofType": null
+              }
+            },
+            {
+              "name": "career_start_year",
+              "args": [],
+              "type": {
+                "name": "Int",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "career_end_year",
+              "args": [],
+              "type": {
+                "name": "Int",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "tattoos",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "LIST",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "piercings",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "LIST",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "images",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "deleted",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Boolean"
+                }
+              }
+            },
+            {
+              "name": "edits",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "scene_count",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Int"
+                }
+              }
+            },
+            {
+              "name": "scenes",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": "PerformerScenesInput"
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "merged_ids",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "merged_into_id",
+              "args": [],
+              "type": {
+                "name": "ID",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "studios",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "is_favorite",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Boolean"
+                }
+              }
+            },
+            {
+              "name": "created",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Time"
+                }
+              }
+            },
+            {
+              "name": "updated",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Time"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "PerformerAppearance",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "performer",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Performer"
+                }
+              }
+            },
+            {
+              "name": "as",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            }
+          ]
+        },
+        {
+          "name": "PerformerAppearanceInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "PerformerCreateInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "PerformerDestroyInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "PerformerDraft",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "id",
+              "args": [],
+              "type": {
+                "name": "ID",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "name",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "String"
+                }
+              }
+            },
+            {
+              "name": "disambiguation",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "aliases",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "gender",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "birthdate",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "deathdate",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "urls",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "LIST",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "ethnicity",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "country",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "eye_color",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "hair_color",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "height",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "measurements",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "breast_type",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "tattoos",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "piercings",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "career_start_year",
+              "args": [],
+              "type": {
+                "name": "Int",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "career_end_year",
+              "args": [],
+              "type": {
+                "name": "Int",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "image",
+              "args": [],
+              "type": {
+                "name": "Image",
+                "kind": "OBJECT",
+                "ofType": null
+              }
+            }
+          ]
+        },
+        {
+          "name": "PerformerDraftInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "PerformerEdit",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "name",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "disambiguation",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "added_aliases",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "LIST",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "removed_aliases",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "LIST",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "gender",
+              "args": [],
+              "type": {
+                "name": "GenderEnum",
+                "kind": "ENUM",
+                "ofType": null
+              }
+            },
+            {
+              "name": "added_urls",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "LIST",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "removed_urls",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "LIST",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "birthdate",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "deathdate",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "ethnicity",
+              "args": [],
+              "type": {
+                "name": "EthnicityEnum",
+                "kind": "ENUM",
+                "ofType": null
+              }
+            },
+            {
+              "name": "country",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "eye_color",
+              "args": [],
+              "type": {
+                "name": "EyeColorEnum",
+                "kind": "ENUM",
+                "ofType": null
+              }
+            },
+            {
+              "name": "hair_color",
+              "args": [],
+              "type": {
+                "name": "HairColorEnum",
+                "kind": "ENUM",
+                "ofType": null
+              }
+            },
+            {
+              "name": "height",
+              "args": [],
+              "type": {
+                "name": "Int",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "cup_size",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "band_size",
+              "args": [],
+              "type": {
+                "name": "Int",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "waist_size",
+              "args": [],
+              "type": {
+                "name": "Int",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "hip_size",
+              "args": [],
+              "type": {
+                "name": "Int",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "breast_type",
+              "args": [],
+              "type": {
+                "name": "BreastTypeEnum",
+                "kind": "ENUM",
+                "ofType": null
+              }
+            },
+            {
+              "name": "career_start_year",
+              "args": [],
+              "type": {
+                "name": "Int",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "career_end_year",
+              "args": [],
+              "type": {
+                "name": "Int",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "added_tattoos",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "LIST",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "removed_tattoos",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "LIST",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "added_piercings",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "LIST",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "removed_piercings",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "LIST",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "added_images",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "LIST",
+                "ofType": {
+                  "name": "Image"
+                }
+              }
+            },
+            {
+              "name": "removed_images",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "LIST",
+                "ofType": {
+                  "name": "Image"
+                }
+              }
+            },
+            {
+              "name": "draft_id",
+              "args": [],
+              "type": {
+                "name": "ID",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "aliases",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "urls",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "images",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "tattoos",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "piercings",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "PerformerEditDetailsInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "PerformerEditInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "PerformerEditOptions",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "set_modify_aliases",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Boolean"
+                }
+              }
+            },
+            {
+              "name": "set_merge_aliases",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Boolean"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "PerformerEditOptionsInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "PerformerQueryInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "PerformerScenesInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "PerformerSortEnum",
+          "kind": "ENUM",
+          "fields": []
+        },
+        {
+          "name": "PerformerStudio",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "studio",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Studio"
+                }
+              }
+            },
+            {
+              "name": "scene_count",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Int"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "PerformerUpdateInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "Query",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "findPerformer",
+              "args": [
+                {
+                  "name": "id",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": "Performer",
+                "kind": "OBJECT",
+                "ofType": null
+              }
+            },
+            {
+              "name": "queryPerformers",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "QueryPerformersResultType"
+                }
+              }
+            },
+            {
+              "name": "findStudio",
+              "args": [
+                {
+                  "name": "id",
+                  "type": {
+                    "name": "ID"
+                  }
+                },
+                {
+                  "name": "name",
+                  "type": {
+                    "name": "String"
+                  }
+                }
+              ],
+              "type": {
+                "name": "Studio",
+                "kind": "OBJECT",
+                "ofType": null
+              }
+            },
+            {
+              "name": "queryStudios",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "QueryStudiosResultType"
+                }
+              }
+            },
+            {
+              "name": "findTag",
+              "args": [
+                {
+                  "name": "id",
+                  "type": {
+                    "name": "ID"
+                  }
+                },
+                {
+                  "name": "name",
+                  "type": {
+                    "name": "String"
+                  }
+                }
+              ],
+              "type": {
+                "name": "Tag",
+                "kind": "OBJECT",
+                "ofType": null
+              }
+            },
+            {
+              "name": "findTagOrAlias",
+              "args": [
+                {
+                  "name": "name",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": "Tag",
+                "kind": "OBJECT",
+                "ofType": null
+              }
+            },
+            {
+              "name": "queryTags",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "QueryTagsResultType"
+                }
+              }
+            },
+            {
+              "name": "findTagCategory",
+              "args": [
+                {
+                  "name": "id",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": "TagCategory",
+                "kind": "OBJECT",
+                "ofType": null
+              }
+            },
+            {
+              "name": "queryTagCategories",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "QueryTagCategoriesResultType"
+                }
+              }
+            },
+            {
+              "name": "findScene",
+              "args": [
+                {
+                  "name": "id",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": "Scene",
+                "kind": "OBJECT",
+                "ofType": null
+              }
+            },
+            {
+              "name": "findSceneByFingerprint",
+              "args": [
+                {
+                  "name": "fingerprint",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "findScenesBySceneFingerprints",
+              "args": [
+                {
+                  "name": "fingerprints",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "queryScenes",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "QueryScenesResultType"
+                }
+              }
+            },
+            {
+              "name": "findSite",
+              "args": [
+                {
+                  "name": "id",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": "Site",
+                "kind": "OBJECT",
+                "ofType": null
+              }
+            },
+            {
+              "name": "querySites",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "QuerySitesResultType"
+                }
+              }
+            },
+            {
+              "name": "findEdit",
+              "args": [
+                {
+                  "name": "id",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": "Edit",
+                "kind": "OBJECT",
+                "ofType": null
+              }
+            },
+            {
+              "name": "queryEdits",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "QueryEditsResultType"
+                }
+              }
+            },
+            {
+              "name": "findUser",
+              "args": [
+                {
+                  "name": "id",
+                  "type": {
+                    "name": "ID"
+                  }
+                },
+                {
+                  "name": "username",
+                  "type": {
+                    "name": "String"
+                  }
+                }
+              ],
+              "type": {
+                "name": "User",
+                "kind": "OBJECT",
+                "ofType": null
+              }
+            },
+            {
+              "name": "queryUsers",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "QueryUsersResultType"
+                }
+              }
+            },
+            {
+              "name": "me",
+              "args": [],
+              "type": {
+                "name": "User",
+                "kind": "OBJECT",
+                "ofType": null
+              }
+            },
+            {
+              "name": "searchPerformer",
+              "args": [
+                {
+                  "name": "term",
+                  "type": {
+                    "name": null
+                  }
+                },
+                {
+                  "name": "limit",
+                  "type": {
+                    "name": "Int"
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "searchScene",
+              "args": [
+                {
+                  "name": "term",
+                  "type": {
+                    "name": null
+                  }
+                },
+                {
+                  "name": "limit",
+                  "type": {
+                    "name": "Int"
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "searchTag",
+              "args": [
+                {
+                  "name": "term",
+                  "type": {
+                    "name": null
+                  }
+                },
+                {
+                  "name": "limit",
+                  "type": {
+                    "name": "Int"
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "searchStudio",
+              "args": [
+                {
+                  "name": "term",
+                  "type": {
+                    "name": null
+                  }
+                },
+                {
+                  "name": "limit",
+                  "type": {
+                    "name": "Int"
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "findDraft",
+              "args": [
+                {
+                  "name": "id",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": "Draft",
+                "kind": "OBJECT",
+                "ofType": null
+              }
+            },
+            {
+              "name": "findDrafts",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "queryExistingScene",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "QueryExistingSceneResult"
+                }
+              }
+            },
+            {
+              "name": "queryExistingPerformer",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "QueryExistingPerformerResult"
+                }
+              }
+            },
+            {
+              "name": "version",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Version"
+                }
+              }
+            },
+            {
+              "name": "getConfig",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "StashBoxConfig"
+                }
+              }
+            },
+            {
+              "name": "queryNotifications",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "QueryNotificationsResult"
+                }
+              }
+            },
+            {
+              "name": "getUnreadNotificationCount",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Int"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "QueryEditsResultType",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "count",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Int"
+                }
+              }
+            },
+            {
+              "name": "edits",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "QueryExistingPerformerInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "QueryExistingPerformerResult",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "edits",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "performers",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "QueryExistingSceneInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "QueryExistingSceneResult",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "edits",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "scenes",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "QueryNotificationsInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "QueryNotificationsResult",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "count",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Int"
+                }
+              }
+            },
+            {
+              "name": "notifications",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "QueryPerformersResultType",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "count",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Int"
+                }
+              }
+            },
+            {
+              "name": "performers",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "QueryScenesResultType",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "count",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Int"
+                }
+              }
+            },
+            {
+              "name": "scenes",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "QuerySitesResultType",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "count",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Int"
+                }
+              }
+            },
+            {
+              "name": "sites",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "QueryStudiosResultType",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "count",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Int"
+                }
+              }
+            },
+            {
+              "name": "studios",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "QueryTagCategoriesResultType",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "count",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Int"
+                }
+              }
+            },
+            {
+              "name": "tag_categories",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "QueryTagsResultType",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "count",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Int"
+                }
+              }
+            },
+            {
+              "name": "tags",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "QueryUsersResultType",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "count",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Int"
+                }
+              }
+            },
+            {
+              "name": "users",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "ResetPasswordInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "RevokeInviteInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "RoleCriterionInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "RoleEnum",
+          "kind": "ENUM",
+          "fields": []
+        },
+        {
+          "name": "Scene",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "id",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "ID"
+                }
+              }
+            },
+            {
+              "name": "title",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "details",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "release_date",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "production_date",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "urls",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "studio",
+              "args": [],
+              "type": {
+                "name": "Studio",
+                "kind": "OBJECT",
+                "ofType": null
+              }
+            },
+            {
+              "name": "tags",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "images",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "performers",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "fingerprints",
+              "args": [
+                {
+                  "name": "is_submitted",
+                  "type": {
+                    "name": "Boolean"
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "duration",
+              "args": [],
+              "type": {
+                "name": "Int",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "director",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "code",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "deleted",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Boolean"
+                }
+              }
+            },
+            {
+              "name": "edits",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "created",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Time"
+                }
+              }
+            },
+            {
+              "name": "updated",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Time"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "SceneCreateInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "SceneDestroyInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "SceneDraft",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "id",
+              "args": [],
+              "type": {
+                "name": "ID",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "title",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "code",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "details",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "director",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "urls",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "LIST",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "date",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "production_date",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "studio",
+              "args": [],
+              "type": {
+                "name": "SceneDraftStudio",
+                "kind": "UNION",
+                "ofType": null
+              }
+            },
+            {
+              "name": "performers",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "tags",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "LIST",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "image",
+              "args": [],
+              "type": {
+                "name": "Image",
+                "kind": "OBJECT",
+                "ofType": null
+              }
+            },
+            {
+              "name": "fingerprints",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "SceneDraftInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "SceneDraftPerformer",
+          "kind": "UNION",
+          "fields": []
+        },
+        {
+          "name": "SceneDraftStudio",
+          "kind": "UNION",
+          "fields": []
+        },
+        {
+          "name": "SceneDraftTag",
+          "kind": "UNION",
+          "fields": []
+        },
+        {
+          "name": "SceneEdit",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "title",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "details",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "added_urls",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "LIST",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "removed_urls",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "LIST",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "date",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "production_date",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "studio",
+              "args": [],
+              "type": {
+                "name": "Studio",
+                "kind": "OBJECT",
+                "ofType": null
+              }
+            },
+            {
+              "name": "added_performers",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "LIST",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "removed_performers",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "LIST",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "added_tags",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "LIST",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "removed_tags",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "LIST",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "added_images",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "LIST",
+                "ofType": {
+                  "name": "Image"
+                }
+              }
+            },
+            {
+              "name": "removed_images",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "LIST",
+                "ofType": {
+                  "name": "Image"
+                }
+              }
+            },
+            {
+              "name": "added_fingerprints",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "LIST",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "removed_fingerprints",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "LIST",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "duration",
+              "args": [],
+              "type": {
+                "name": "Int",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "director",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "code",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "draft_id",
+              "args": [],
+              "type": {
+                "name": "ID",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "urls",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "performers",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "tags",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "images",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "fingerprints",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "SceneEditDetailsInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "SceneEditInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "SceneQueryInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "SceneSortEnum",
+          "kind": "ENUM",
+          "fields": []
+        },
+        {
+          "name": "SceneUpdateInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "Site",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "id",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "ID"
+                }
+              }
+            },
+            {
+              "name": "name",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "String"
+                }
+              }
+            },
+            {
+              "name": "description",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "url",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "regex",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "valid_types",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "icon",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "String"
+                }
+              }
+            },
+            {
+              "name": "created",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Time"
+                }
+              }
+            },
+            {
+              "name": "updated",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Time"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "SiteCreateInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "SiteDestroyInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "SiteUpdateInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "SortDirectionEnum",
+          "kind": "ENUM",
+          "fields": []
+        },
+        {
+          "name": "StashBoxConfig",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "host_url",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "String"
+                }
+              }
+            },
+            {
+              "name": "require_invite",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Boolean"
+                }
+              }
+            },
+            {
+              "name": "require_activation",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Boolean"
+                }
+              }
+            },
+            {
+              "name": "vote_promotion_threshold",
+              "args": [],
+              "type": {
+                "name": "Int",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "vote_application_threshold",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Int"
+                }
+              }
+            },
+            {
+              "name": "voting_period",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Int"
+                }
+              }
+            },
+            {
+              "name": "min_destructive_voting_period",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Int"
+                }
+              }
+            },
+            {
+              "name": "vote_cron_interval",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "String"
+                }
+              }
+            },
+            {
+              "name": "guidelines_url",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "String"
+                }
+              }
+            },
+            {
+              "name": "require_scene_draft",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Boolean"
+                }
+              }
+            },
+            {
+              "name": "edit_update_limit",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Int"
+                }
+              }
+            },
+            {
+              "name": "require_tag_role",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Boolean"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "String",
+          "kind": "SCALAR",
+          "fields": []
+        },
+        {
+          "name": "StringCriterionInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "Studio",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "id",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "ID"
+                }
+              }
+            },
+            {
+              "name": "name",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "String"
+                }
+              }
+            },
+            {
+              "name": "aliases",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "urls",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "parent",
+              "args": [],
+              "type": {
+                "name": "Studio",
+                "kind": "OBJECT",
+                "ofType": null
+              }
+            },
+            {
+              "name": "child_studios",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "images",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "deleted",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Boolean"
+                }
+              }
+            },
+            {
+              "name": "is_favorite",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Boolean"
+                }
+              }
+            },
+            {
+              "name": "created",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Time"
+                }
+              }
+            },
+            {
+              "name": "updated",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Time"
+                }
+              }
+            },
+            {
+              "name": "performers",
+              "args": [
+                {
+                  "name": "input",
+                  "type": {
+                    "name": null
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "QueryPerformersResultType"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "StudioCreateInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "StudioDestroyInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "StudioEdit",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "name",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "added_urls",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "LIST",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "removed_urls",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "LIST",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "parent",
+              "args": [],
+              "type": {
+                "name": "Studio",
+                "kind": "OBJECT",
+                "ofType": null
+              }
+            },
+            {
+              "name": "added_images",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "LIST",
+                "ofType": {
+                  "name": "Image"
+                }
+              }
+            },
+            {
+              "name": "removed_images",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "LIST",
+                "ofType": {
+                  "name": "Image"
+                }
+              }
+            },
+            {
+              "name": "added_aliases",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "LIST",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "removed_aliases",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "LIST",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "images",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "urls",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "StudioEditDetailsInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "StudioEditInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "StudioQueryInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "StudioSortEnum",
+          "kind": "ENUM",
+          "fields": []
+        },
+        {
+          "name": "StudioUpdateInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "Tag",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "id",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "ID"
+                }
+              }
+            },
+            {
+              "name": "name",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "String"
+                }
+              }
+            },
+            {
+              "name": "description",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "aliases",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "deleted",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Boolean"
+                }
+              }
+            },
+            {
+              "name": "edits",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "category",
+              "args": [],
+              "type": {
+                "name": "TagCategory",
+                "kind": "OBJECT",
+                "ofType": null
+              }
+            },
+            {
+              "name": "created",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Time"
+                }
+              }
+            },
+            {
+              "name": "updated",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Time"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "TagCategory",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "id",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "ID"
+                }
+              }
+            },
+            {
+              "name": "name",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "String"
+                }
+              }
+            },
+            {
+              "name": "group",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "TagGroupEnum"
+                }
+              }
+            },
+            {
+              "name": "description",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            }
+          ]
+        },
+        {
+          "name": "TagCategoryCreateInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "TagCategoryDestroyInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "TagCategoryUpdateInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "TagCreateInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "TagDestroyInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "TagEdit",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "name",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "description",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "added_aliases",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "LIST",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "removed_aliases",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "LIST",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "category",
+              "args": [],
+              "type": {
+                "name": "TagCategory",
+                "kind": "OBJECT",
+                "ofType": null
+              }
+            },
+            {
+              "name": "aliases",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "TagEditDetailsInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "TagEditInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "TagGroupEnum",
+          "kind": "ENUM",
+          "fields": []
+        },
+        {
+          "name": "TagQueryInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "TagSortEnum",
+          "kind": "ENUM",
+          "fields": []
+        },
+        {
+          "name": "TagUpdateInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "TargetTypeEnum",
+          "kind": "ENUM",
+          "fields": []
+        },
+        {
+          "name": "Time",
+          "kind": "SCALAR",
+          "fields": []
+        },
+        {
+          "name": "URL",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "url",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "String"
+                }
+              }
+            },
+            {
+              "name": "site",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Site"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "URLInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "UpdatedEdit",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "edit",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Edit"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "Upload",
+          "kind": "SCALAR",
+          "fields": []
+        },
+        {
+          "name": "User",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "id",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "ID"
+                }
+              }
+            },
+            {
+              "name": "name",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "String"
+                }
+              }
+            },
+            {
+              "name": "roles",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "LIST",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "email",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "api_key",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "notification_subscriptions",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "vote_count",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "UserVoteCount"
+                }
+              }
+            },
+            {
+              "name": "edit_count",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "UserEditCount"
+                }
+              }
+            },
+            {
+              "name": "api_calls",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Int"
+                }
+              }
+            },
+            {
+              "name": "invited_by",
+              "args": [],
+              "type": {
+                "name": "User",
+                "kind": "OBJECT",
+                "ofType": null
+              }
+            },
+            {
+              "name": "invite_tokens",
+              "args": [],
+              "type": {
+                "name": "Int",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "invite_codes",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "LIST",
+                "ofType": {
+                  "name": null
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "UserChangeEmailInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "UserChangeEmailStatus",
+          "kind": "ENUM",
+          "fields": []
+        },
+        {
+          "name": "UserChangePasswordInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "UserCreateInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "UserDestroyInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "UserEditCount",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "accepted",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Int"
+                }
+              }
+            },
+            {
+              "name": "rejected",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Int"
+                }
+              }
+            },
+            {
+              "name": "pending",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Int"
+                }
+              }
+            },
+            {
+              "name": "immediate_accepted",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Int"
+                }
+              }
+            },
+            {
+              "name": "immediate_rejected",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Int"
+                }
+              }
+            },
+            {
+              "name": "failed",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Int"
+                }
+              }
+            },
+            {
+              "name": "canceled",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Int"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "UserQueryInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "UserUpdateInput",
+          "kind": "INPUT_OBJECT",
+          "fields": []
+        },
+        {
+          "name": "UserVoteCount",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "abstain",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Int"
+                }
+              }
+            },
+            {
+              "name": "accept",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Int"
+                }
+              }
+            },
+            {
+              "name": "reject",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Int"
+                }
+              }
+            },
+            {
+              "name": "immediate_accept",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Int"
+                }
+              }
+            },
+            {
+              "name": "immediate_reject",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Int"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "UserVotedFilterEnum",
+          "kind": "ENUM",
+          "fields": []
+        },
+        {
+          "name": "ValidSiteTypeEnum",
+          "kind": "ENUM",
+          "fields": []
+        },
+        {
+          "name": "Version",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "hash",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "String"
+                }
+              }
+            },
+            {
+              "name": "build_time",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "String"
+                }
+              }
+            },
+            {
+              "name": "build_type",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "String"
+                }
+              }
+            },
+            {
+              "name": "version",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "String"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "VoteStatusEnum",
+          "kind": "ENUM",
+          "fields": []
+        },
+        {
+          "name": "VoteTypeEnum",
+          "kind": "ENUM",
+          "fields": []
+        },
+        {
+          "name": "__Directive",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "name",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "String"
+                }
+              }
+            },
+            {
+              "name": "description",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "locations",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "args",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "isRepeatable",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Boolean"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "__DirectiveLocation",
+          "kind": "ENUM",
+          "fields": []
+        },
+        {
+          "name": "__EnumValue",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "name",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "String"
+                }
+              }
+            },
+            {
+              "name": "description",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "isDeprecated",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Boolean"
+                }
+              }
+            },
+            {
+              "name": "deprecationReason",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            }
+          ]
+        },
+        {
+          "name": "__Field",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "name",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "String"
+                }
+              }
+            },
+            {
+              "name": "description",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "args",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "type",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "__Type"
+                }
+              }
+            },
+            {
+              "name": "isDeprecated",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "Boolean"
+                }
+              }
+            },
+            {
+              "name": "deprecationReason",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            }
+          ]
+        },
+        {
+          "name": "__InputValue",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "name",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "String"
+                }
+              }
+            },
+            {
+              "name": "description",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "type",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "__Type"
+                }
+              }
+            },
+            {
+              "name": "defaultValue",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            }
+          ]
+        },
+        {
+          "name": "__Schema",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "description",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "types",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "queryType",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "__Type"
+                }
+              }
+            },
+            {
+              "name": "mutationType",
+              "args": [],
+              "type": {
+                "name": "__Type",
+                "kind": "OBJECT",
+                "ofType": null
+              }
+            },
+            {
+              "name": "subscriptionType",
+              "args": [],
+              "type": {
+                "name": "__Type",
+                "kind": "OBJECT",
+                "ofType": null
+              }
+            },
+            {
+              "name": "directives",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": null
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "__Type",
+          "kind": "OBJECT",
+          "fields": [
+            {
+              "name": "kind",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "__TypeKind"
+                }
+              }
+            },
+            {
+              "name": "name",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "description",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            {
+              "name": "fields",
+              "args": [
+                {
+                  "name": "includeDeprecated",
+                  "type": {
+                    "name": "Boolean"
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "LIST",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "interfaces",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "LIST",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "possibleTypes",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "LIST",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "enumValues",
+              "args": [
+                {
+                  "name": "includeDeprecated",
+                  "type": {
+                    "name": "Boolean"
+                  }
+                }
+              ],
+              "type": {
+                "name": null,
+                "kind": "LIST",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "inputFields",
+              "args": [],
+              "type": {
+                "name": null,
+                "kind": "LIST",
+                "ofType": {
+                  "name": null
+                }
+              }
+            },
+            {
+              "name": "ofType",
+              "args": [],
+              "type": {
+                "name": "__Type",
+                "kind": "OBJECT",
+                "ofType": null
+              }
+            },
+            {
+              "name": "specifiedByURL",
+              "args": [],
+              "type": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            }
+          ]
+        },
+        {
+          "name": "__TypeKind",
+          "kind": "ENUM",
+          "fields": []
+        }
+      ]
+    }
+  }
+}
